@@ -1,11 +1,11 @@
 #if defined(GEODE_IS_MACOS)
-#include <Cocoa/Cocoa.h>
+#import <Cocoa/Cocoa.h>
+#include <objc/runtime.h>
 #endif
 #include <Geode/Loader.hpp>
 #include <Geode/Utils.hpp>
-#if defined(GEODE_IS_MACOS)
-#include <objc/runtime.h>
 
+#if defined(GEODE_IS_MACOS)
 using namespace geode::prelude;
 
 static IMP s_originalSendEventIMP;
