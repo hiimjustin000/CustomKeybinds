@@ -1,9 +1,9 @@
-#ifdef GEODE_IS_MACOS
-#import <Cocoa/Cocoa.h>
+#if defined(GEODE_IS_MACOS)
+#include <Cocoa/Cocoa.h>
 #endif
 #include <Geode/Loader.hpp>
 #include <Geode/Utils.hpp>
-#ifdef GEODE_IS_MACOS
+#if defined(GEODE_IS_MACOS)
 #include <objc/runtime.h>
 
 using namespace geode::prelude;
