@@ -2,8 +2,10 @@
 #include <Geode/Utils.hpp>
 
 #if defined(GEODE_IS_MACOS)
+#define CommentType CommentTypeDummy
 #import <Cocoa/Cocoa.h>
 #include <objc/runtime.h>
+#undef CommentType
 
 using namespace geode::prelude;
 
